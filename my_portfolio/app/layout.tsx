@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-gray-50 text-gray-950 relative pt-36 sm:pt-28`}>
+      <body className={`${inter.className} bg-gray-50 text-gray-950 relative pt-36 sm:pt-28 overflow-x-hidden`}>
         <div className="bg-gradient-to-r from-[#f7f7f7] to-[#e0f7fa] absolute top-0 left-0 w-full h-full -z-20"
         
         ></div>

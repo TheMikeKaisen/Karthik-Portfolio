@@ -35,7 +35,7 @@ const IntroPage = () => {
 
       {/* Intro Paragraph */}
 
-      <motion.p
+      <motion.h1
         className="mt-5 mb-10 px-4 text-lg font-medium !leading-[1.5] sm:text-xl"
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -45,7 +45,7 @@ const IntroPage = () => {
         <strong>MERN stack</strong> and <strong>Next.js</strong>. Currently in
         my 3rd year of college, I'm actively building innovative web solutions
         and engaging with the tech community. Welcome to my portfolio!
-      </motion.p>
+      </motion.h1>
 
       {/* Buttons */}
       <motion.div
