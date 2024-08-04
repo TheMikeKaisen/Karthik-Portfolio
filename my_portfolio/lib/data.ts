@@ -1,6 +1,6 @@
-import corpcommentImg from "@/public/corpcomment.png";
+import wordanalyticsImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import flowstateImg from "@/public/projects/flowstateImg.png";
 import React from "react";
 import { FaUniversity } from "react-icons/fa";
 import { MdOutlineSchool } from "react-icons/md";
@@ -53,11 +53,11 @@ export const educationData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "FlowState",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+        "FlowState is a productivity tool designed to help users manage their tasks and time effectively.",
+    tags: ["React", "Next.js", "TypeScript", "Tailwind", "Prisma"],
+    imageUrl: flowstateImg
   },
   {
     title: "rmtDev",

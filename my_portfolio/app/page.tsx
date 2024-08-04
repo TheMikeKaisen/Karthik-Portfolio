@@ -2,6 +2,7 @@ import Image from 'next/image'
 import IntroPage from './intro/page'
 import SectionDivider from '@/components/section-divider'
 import About from '@/components/about'
+import ProjectPage from '@/components/projects'
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <IntroPage />
       <SectionDivider />
       <About />
+      <ProjectPage />
     </main>
   )
 }

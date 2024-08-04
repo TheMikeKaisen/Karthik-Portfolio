@@ -1,8 +1,15 @@
+"use client"
 import SectionHeading from "./section-heading";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <section className="mb:28 sm:mb-40 max-w-[45rem] text-center leading-8 ">
+    <motion.section className="mb:28 sm:mb-40 max-w-[45rem] text-center leading-8 "
+        initial={{y:100, opacity:0}}
+        animate={{y:0, opacity:1}}
+        transition={{ delay:0.2}}
+    
+    >
       <SectionHeading>about me</SectionHeading>
       <div className="flex flex-col gap-5  font-medium">
         {/* me */}
@@ -51,7 +58,7 @@ const About = () => {
           connect and chat about how we can create something amazing together!
         </p>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
