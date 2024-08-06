@@ -44,7 +44,7 @@ export function Project({ title, description, tags, imageUrl }: projectProps) {
           src={imageUrl}
           alt="Project"
           quality={"90"}
-          className="absolute -right-40 top-8 w-[28.25rem] rounded-lg shadow-2xl group-even:right-[initial] group-even:-left-40
+          className="absolute sm:-right-40 -right-60 top-8 w-[28.25rem] rounded-lg shadow-2xl group-even:right-[initial] group-even:-left-40
         transition
         group-hover:-translate-x-3
         group-hover:translate-y-3 group-hover:-rotate-3

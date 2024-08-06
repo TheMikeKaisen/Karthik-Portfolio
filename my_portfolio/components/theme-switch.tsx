@@ -11,7 +11,7 @@ const ThemeSwitch = () => {
       className="fixed bottom-5 right-5 bg-white w-[3rem] flex items-center justify-center h-[3rem] bg-opacity-80 backdrop-blur-[0.5rem] border border-white border-opacity-40 shadow-2xl rounded-full  hover:scale-[1.15] active:scale-105 transition-all"
       onClick={toggleTheme}
     >
-      {theme === "light" ? <BsSun /> : <BsMoon />}
+      {theme === "light" ? <BsSun /> : <BsMoon className="dark:text-black"/>}
     </button>
   );
 };
