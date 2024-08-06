@@ -10,9 +10,9 @@ import { FaGithubSquare } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 
 const IntroPage = () => {
-  const {ref} = useSectionInView("Home", 0.5)
+  const { ref } = useSectionInView("Home", 0.5);
 
-  const {setActiveSection, setTimeOfLastClick} = useActiveSectionContext();
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <section
@@ -46,15 +46,19 @@ const IntroPage = () => {
       {/* Intro Paragraph */}
 
       <motion.h1
-        className="mt-5 mb-10 px-4 text-lg font-medium !leading-[1.5] sm:text-xl"
+        className="mt-5 mb-10 px-4 text-lg font-medium !leading-[1.5] sm:text-xl dark:text-gray-300"
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
       >
-        <strong>Hi, I'm Karthik H!</strong> I'm a passionate{" "}
-        <strong>web developer</strong> specializing in the{" "}
-        <strong>MERN stack</strong> and <strong>Next.js</strong>. Currently in
-        my 3rd year of college, I'm actively building innovative web solutions
-        and engaging with the tech community. Welcome to my portfolio!
+        <div className="text-2xl pb-3">
+          <strong>Hi, I'm Karthik H!</strong>
+        </div>
+        <div>
+          I'm a passionate <strong>web developer</strong> specializing in the{" "}
+          <strong>MERN stack</strong> and <strong>Next.js</strong>. Currently in
+          my 3rd year of college, I'm actively building innovative web solutions
+          and engaging with the tech community. Welcome to my portfolio!
+        </div>
       </motion.h1>
 
       {/* Buttons */}
@@ -71,8 +75,8 @@ const IntroPage = () => {
           href={"#contact"}
           className="group bg-gray-800 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none  hover:scale-110 transition active:scale-105"
           onClick={() => {
-            setActiveSection("Contact")
-            setTimeOfLastClick(Date.now())
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
           }}
         >
           Contact Me
@@ -81,7 +85,7 @@ const IntroPage = () => {
 
         {/* Download Resume */}
         <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none  hover:scale-110 transition active:scale-105 cursor-pointer borderBlack"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none  hover:scale-110 transition active:scale-105 cursor-pointer borderBlack dark:bg-white/10 dark:text-gray-200"
           href="/resume/karthik_fullstack_resume.pdf"
           download={true}
         >
@@ -91,7 +95,7 @@ const IntroPage = () => {
 
         {/* LinkedIn */}
         <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none  hover:scale-[1.15] transition active:scale-105 borderBlack"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none  hover:scale-[1.15] transition active:scale-105 borderBlack dark:bg-white/10 dark:text-white"
           href={"https://www.linkedin.com/in/karthik-h-nair/"}
           target="_blank"
         >
@@ -100,7 +104,7 @@ const IntroPage = () => {
 
         {/* Github */}
         <a
-          className="bg-white p-4 text-[1.35rem] text-gray-700 flex items-center gap-2 rounded-full outline-none  hover:scale-[1.15]  transition active:scale-105 borderBlack"
+          className="bg-white p-4 text-[1.35rem] text-gray-700 flex items-center gap-2 rounded-full outline-none  hover:scale-[1.15]  transition active:scale-105 borderBlack dark:bg-white/10 dark:text-white"
           href={"https://github.com/TheMikeKaisen"}
           target="_blank"
         >

@@ -4,9 +4,13 @@
 
 
 html{
-    --line-color: #e5d7db
+    --line-color: #e5d7db;
+}
+
+html.dark{
+    --line-color: rgba(255, 255, 255, 0.2);
 }
 
 .borderBlack{
-    @apply border border-black/10
+    @apply border border-black/10;
 }

@@ -16,53 +16,34 @@ const About = () => {
       id="about"
     >
       <SectionHeading>about me</SectionHeading>
-      <div className="flex flex-col gap-5  font-medium">
-        {/* me */}
-        <p>
-          Hey there! I'm Karthik, a web developer and third-year computer
-          science student from the vibrant city of Jaipur, India 🇮🇳. I'm on a
-          mission to craft awesome digital experiences that make people go
-          "Wow!"
-        </p>
+      <div className="flex flex-col gap-6 font-medium text-gray-600 dark:text-gray-200">
+  {/* Introduction */}
+  <p className="text-lg">
+    Hey there! I'm <span className="font-bold">Karthik</span>, a web developer and third-year computer science student from the vibrant city of Jaipur, India 🇮🇳. I'm on a mission to craft awesome digital experiences that make people go "Wow!"
+  </p>
 
-        {/* mern and nextjs */}
-        <p>
-          I'm all about the <strong>MERN stack</strong> (MongoDB, Express.js,
-          React, Node.js), and I've got a special love affair with{" "}
-          <strong>Next.js</strong> and <strong>TypeScript</strong>. When I'm not
-          coding, you'll find me wireframing in <strong>Figma</strong> or
-          geeking out over the latest web technologies.
-        </p>
+  {/* Expertise */}
+  <p className="text-lg">
+    I specialize in the <strong>MERN stack</strong> (MongoDB, Express.js, React, Node.js), and have a particular fondness for <strong>Next.js</strong> and <strong>TypeScript</strong>. When I'm not coding, you'll find me wireframing in <strong>Figma</strong> or geeking out over the latest web technologies.
+  </p>
 
-        {/* technologies */}
-        <div>
-          <p className="text-lg font-bold">My tech playground </p>
-          <ul>
-            <li>Front-end: React, Next.js, TypeScript</li>
-            <li>Back-end: Node.js, Express.js</li>
-            <li>Database: MongoDB, Prisma, Postgres</li>
-            <li>Authentication: Auth0, Clerk</li>
-            <li>Design: Figma</li>
-          </ul>
-        </div>
+  {/* Technologies */}
+  <div className="text-lg"> My journey in the tech world is driven by continuous learning and hands-on practice. I actively engage in coding challenges and debugging sessions to sharpen my skills. 
+  Additionally, I am proficient in <strong>TypeScript</strong> and <strong>Zod</strong>, ensuring robust type-checking and data validation in my projects.</div>
 
-        {/* fun fact */}
-        <p>
-          Fun fact: I once debugged code for 7 hours straight and still loved
-          every minute of it! 🤓
-        </p>
+  
 
-        <p>
-          When I'm not building the web, I'm probably creating content, sharing
-          insights, or discussing tech trends with fellow developers. I believe
-          in the power of community and continuous learning.
-        </p>
+  {/* Community Involvement */}
+  <p className="text-lg">
+    When I'm not building the web, I'm probably creating content, sharing insights, or discussing tech trends with fellow developers. I believe in the power of community and continuous learning.
+  </p>
 
-        <p>
-          Want to see what I can do? Check out my projects below or let's
-          connect and chat about how we can create something amazing together!
-        </p>
-      </div>
+  {/* Call to Action */}
+  <p className="text-lg">
+  I am open to full-time opportunities where I can contribute to dynamic projects and collaborate with talented professionals. Let's connect and create something amazing together.
+  </p>
+</div>
+
     </motion.section>
   );
 };
