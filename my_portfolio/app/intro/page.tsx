@@ -17,7 +17,7 @@ const IntroPage = () => {
   return (
     <section
       ref={ref}
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-40 sm:scroll-mt-28"
+      className=" max-w-[50rem] text-center sm:mb-0 scroll-mt-40 sm:scroll-mt-28"
       id="home"
     >
       <div className="flex items-center justify-center">
