@@ -1,14 +1,19 @@
-"use client"
-import SectionHeading from "./section-heading";
+"use client";
+import useSectionInView from "@/lib/hooks";
 import { motion } from "framer-motion";
+import SectionHeading from "./section-heading";
 
 const About = () => {
+  const { ref } = useSectionInView("About", 0.6);
+
   return (
-    <motion.section className="mb:28 sm:mb-40 max-w-[45rem] text-center leading-8 "
-        initial={{y:100, opacity:0}}
-        animate={{y:0, opacity:1}}
-        transition={{ delay:0.2}}
-    
+    <motion.section
+      ref={ref}
+      className="mb-28 sm:mb-40 max-w-[45rem] text-center leading-8 scroll-mt-40 sm:scroll-mt-28"
+      initial={{ y: 100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ delay: 0.2 }}
+      id="about"
     >
       <SectionHeading>about me</SectionHeading>
       <div className="flex flex-col gap-5  font-medium">
