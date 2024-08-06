@@ -9,7 +9,7 @@ const ProjectPage = () => {
   const { ref } = useSectionInView("Projects", 0.3);
 
   return (
-    <section ref={ref} className=" scroll-mt-40 sm:scroll-mt-28" id="projects">
+    <section ref={ref} className=" scroll-mt-40 sm:scroll-mt-28 mb-28" id="projects">
       <SectionHeading>Projects</SectionHeading>
       <div className="flex flex-col gap-8">
         {projectsData.map((project, index) => (
