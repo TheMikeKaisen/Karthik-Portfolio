@@ -33,7 +33,7 @@ const Contact =  () => {
         <a className="underline" href="mailto:h.karthiknair@gmail.com">
           h.karthiknair@gmail.com
         </a>
-        or through this form.
+        {" "}or through this form.
       </p>
       <form
         className="mt-10 flex flex-col"
