@@ -1,5 +1,6 @@
 "use client";
 
+import { useActiveSectionContext } from "@/context/active-section-context";
 import useSectionInView from "@/lib/hooks";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -10,6 +11,8 @@ import { HiDownload } from "react-icons/hi";
 
 const IntroPage = () => {
   const {ref} = useSectionInView("Home", 0.5)
+
+  const {setActiveSection, setTimeOfLastClick} = useActiveSectionContext();
 
   return (
     <section
@@ -67,6 +70,10 @@ const IntroPage = () => {
         <Link
           href={"#contact"}
           className="group bg-gray-800 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none  hover:scale-110 transition active:scale-105"
+          onClick={() => {
+            setActiveSection("Contact")
+            setTimeOfLastClick(Date.now())
+          }}
         >
           Contact Me
           <BsArrowRight className="group-hover:translate-x-1.5 transition opacity-70" />
@@ -74,7 +81,7 @@ const IntroPage = () => {
 
         {/* Download Resume */}
         <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none  hover:scale-110 transition active:scale-105 cursor-pointer border border-black/10"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none  hover:scale-110 transition active:scale-105 cursor-pointer borderBlack"
           href="/resume/karthik_fullstack_resume.pdf"
           download={true}
         >
@@ -84,7 +91,7 @@ const IntroPage = () => {
 
         {/* LinkedIn */}
         <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none  hover:scale-[1.15] transition active:scale-105 border border-black/10"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none  hover:scale-[1.15] transition active:scale-105 borderBlack"
           href={"https://www.linkedin.com/in/karthik-h-nair/"}
           target="_blank"
         >
@@ -93,7 +100,7 @@ const IntroPage = () => {
 
         {/* Github */}
         <a
-          className="bg-white p-4 text-[1.35rem] text-gray-700 flex items-center gap-2 rounded-full outline-none  hover:scale-[1.15]  transition active:scale-105 border border-black/10"
+          className="bg-white p-4 text-[1.35rem] text-gray-700 flex items-center gap-2 rounded-full outline-none  hover:scale-[1.15]  transition active:scale-105 borderBlack"
           href={"https://github.com/TheMikeKaisen"}
           target="_blank"
         >
