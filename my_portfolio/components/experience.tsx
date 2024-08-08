@@ -8,7 +8,7 @@ import { educationData } from '@/lib/data'
 import useSectionInView from '@/lib/hooks'
 import { useTheme } from '@/context/theme-context'
 
-const Experience = () => {
+const Education = () => {
     const {ref} = useSectionInView('Experience')
     const {theme} = useTheme();
   return (
@@ -52,4 +52,4 @@ const Experience = () => {
   )
 }
 
-export default Experience
+export default Education
